@@ -43,6 +43,7 @@ class OrbList {
     Insert o to the beginning of the list.
     =========================*/
   void addFront(OrbNode o) {
+    o = new OrbNode(); 
 
   }//addFront
 
@@ -55,9 +56,12 @@ class OrbList {
     using addFront.
     If ordered is true, the orbs should all
     have the same y coordinate and be spaced
-    SPRING_LEGNTH apart horizontally.
+    SPRING_LENGTH apart horizontally.
     =========================*/
   void populate(int n, boolean ordered) {
+    for (int i = 0; i < n; i++) {
+      addFront(front);
+    }
 
   }//populate
 
@@ -68,7 +72,7 @@ class OrbList {
     the display method defined in the OrbNode class.
     =========================*/
   void display() {
-
+    front.display();
   }//display
 
   /*===========================
@@ -78,7 +82,7 @@ class OrbList {
     element in the list.
     =========================*/
   void applySprings(int springLength, float springK) {
-
+    
   }//applySprings
 
   /*===========================
