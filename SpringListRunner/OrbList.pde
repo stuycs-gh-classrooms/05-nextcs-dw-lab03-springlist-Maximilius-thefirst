@@ -59,8 +59,13 @@ class OrbList {
     SPRING_LENGTH apart horizontally.
     =========================*/
   void populate(int n, boolean ordered) {
+    if (ordered) {
     for (int i = 0; i < n; i++) {
       addFront(front);
+    }
+    }
+    else {
+      
     }
 
   }//populate
@@ -100,7 +105,7 @@ class OrbList {
 
     Call run on each node in the list.
     =========================*/
-  void run(boolean boucne) {
+  void run(boolean bounce) {
 
   }//applySprings
 
